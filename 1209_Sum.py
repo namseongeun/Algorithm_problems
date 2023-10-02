@@ -26,5 +26,5 @@ for _ in range(10):
     for i in range(100):
         if sum(mat[i]) > max_sum:
             max_sum = sum(mat[i])
-
+ 
     print(f'#{tc} {max(max_sum, diagonal_sum1, diagonal_sum2)}')
