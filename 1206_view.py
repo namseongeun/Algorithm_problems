@@ -15,4 +15,4 @@ for tc in range(10):
         else:
             idx += 1
 
-    print(f"#{tc} {result}")
+    print(f"#{tc} {result}") 

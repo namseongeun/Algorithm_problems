@@ -13,7 +13,7 @@ for tc in range(1, 11):
 
         if (max_boxes - min_boxes) <= 1 or N == 0:
             result = max_boxes - min_boxes
-            break
+            break 
 
         else:
             N -= 1
