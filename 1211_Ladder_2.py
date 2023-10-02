@@ -7,7 +7,7 @@ sys.stdin = open('1211_Ladder_2.txt')
 for _ in range(10):
     tc = int(input())
     ladder_mat = [list(map(int, input().split())) for _ in range(100)]
-
+    
     start_idxes = []
     for n in range(100):
         if ladder_mat[0][n] == 1:
