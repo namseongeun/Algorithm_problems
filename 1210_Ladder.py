@@ -10,7 +10,7 @@ for _ in range(10):
     i = 99
     j = 0
     for e in range(100):
-        if ladder_mat[99][e] == 2:
+        if ladder_mat[99][e] == 2: 
             j = e
 
     while i >= 0:
