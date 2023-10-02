@@ -21,4 +21,4 @@ for tc in range(1, 11):
             box_piles.remove(min_boxes)
             box_piles.extend((max_boxes - 1, min_boxes + 1))
 
-    print(f"#{tc} {result}")
+    print(f"#{tc} {result}") 
