@@ -7,7 +7,7 @@ sys.stdin = open('1211_Ladder_2.txt')
 for _ in range(10):
     tc = int(input())
     ladder_mat = [list(map(int, input().split())) for _ in range(100)]
-    
+
     start_idxes = []
     for n in range(100):
         if ladder_mat[0][n] == 1:
@@ -41,7 +41,7 @@ for _ in range(10):
                 copied_mat[i][j] = 0
                 i += 1
                 cnt += 1
-
+    
         if cnt < min_cnt:
             min_cnt = cnt
             min_idx = start_idx
