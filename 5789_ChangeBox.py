@@ -10,9 +10,7 @@ for tc in range(1, T+1):
 
     for i in range(1, Q+1):
         L, R = map(int, input().split())
-
-        for n in range(L, R+1):
-            boxes[n-1] = i
+        boxes[L-1:R] = [i] * (R-L+1)
 
     print(f"#{tc}", end=' ')
     print(*boxes)
