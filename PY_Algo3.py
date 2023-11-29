@@ -1,23 +1,10 @@
-def B():
-    try:
-        A = input('0~100사이의 점수를 입력하세요')
-        if 0 <= int(A) <= 100:
-            A = int(A)
-        else:
-            B()
-    except:
-        B()
+dict_A = {1: '유우연', 2: '남성은', 3: '양세림', 4: '남경태'}
 
-    return A
+print(dict_A[1])
+print(dict_A[2])
+print(dict_A[3])
+print(dict_A[4])
 
-
-i = 1
-j = 2
-k = 's'
-o = 'sksksk'
-l = [1, 2, 3, 4]
-m = [4, 5 ,6]
-n = [4]
-
-
-print(m * 3)
+print(dict_A.keys())
+print(dict_A.values())
+print(dict_A.items())
