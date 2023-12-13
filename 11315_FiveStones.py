@@ -13,6 +13,7 @@ for tc in range(1, T+1):
 
     flag = 0
 
+    # row와 col 확인
     for row in grid:
         for j in range(N-5+1):
             if row[j:j+5] == ['o'] * 5:
@@ -31,6 +32,7 @@ for tc in range(1, T+1):
                 break
 
     
+    # 대각선 확인
     i = 0
     while i != (N-5+1):
         for j in range(0, N-5+1):
@@ -42,9 +44,12 @@ for tc in range(1, T+1):
                 flag += 1
                 break
 
+        # 만약 끝까지 갔는데도 오목없으면 하나 더해서 종료
         i += 1
 
+
     i = 0
+
     while i != (N-5+1):
         for j in range(0, N-5+1):
             dia_2 = []
@@ -57,6 +62,7 @@ for tc in range(1, T+1):
 
         i += 1
 
+    # 플래그 확인 후 결과 결정
     if flag == 0:
         result = 'NO'
     else:  
